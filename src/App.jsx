@@ -11,6 +11,13 @@ function App() {
     <DoubleDice />
     <DoubleDice />
     <DoubleDice />
+{/* 
+    <Die numSides={6}/>
+    <Die numSides={15}/>
+    <Die numSides={10}/>
+
+    <Greeter person="Samuel" from="Pelumi"/>
+    <Greeter person="James" from="Esther"/> */}
   </div>
 }
 
