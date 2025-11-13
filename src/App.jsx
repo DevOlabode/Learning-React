@@ -5,14 +5,16 @@ import Die from './die'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import Heading from './Heading'
+import ColorList from './ColorList'
 
 function App() {
   return <div>
-    <Heading color="Magenta" text="Welcome"/>
+    <ColorList colors={["teal", "magenta", "pink", "purple", "red"]}/>
+    {/* <Heading color="Magenta" text="Welcome"/> */}
     {/* <ListPicker values={[1,2,2,4,4]}/> */}
+    {/* <DoubleDice />
     <DoubleDice />
-    <DoubleDice />
-    <DoubleDice />
+    <DoubleDice /> */}
 {/* 
     <Die numSides={6}/>
     <Die numSides={15}/>
