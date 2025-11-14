@@ -7,9 +7,18 @@ import DoubleDice from './DoubleDice'
 import Heading from './Heading'
 import ColorList from './ColorList'
 import Slots from './Slots'
+import ShoppingList from './ShoppingList'
+
+const data = [
+  {item : 'Eggs', quantity : 12, completed : false},
+  {item : 'milk', quantity : 1, completed : true},
+  {item : 'Carrots', quantity : 4, completed : true},
+  {item : 'Chicken', quantity : 10, completed : false},
+]
 
 function App() {
   return <div>
+    <ShoppingList items={data}/>
     {/* <ColorList colors={["teal", "magenta", "pink", "purple", "red"]}/>
     <Slots v1='w' v2='w' v3='w'/>
     <Slots v1='😋' v2='😋' v3='😂'/>
