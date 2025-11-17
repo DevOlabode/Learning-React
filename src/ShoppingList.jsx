@@ -1,11 +1,21 @@
+import ShoppingListItem from './ShoppingListItem'
+
 const ShoppingList = ({items})=>{
     return (
         <ul>
-            {items.map(i=> 
-            <li style={
-                {color : i.completed ? 'grey' : 'red', 
-                textDecoration : i.completed ? 'line-through' : 'none'}}>
-                    {i.item} - {i.quantity}</li>)}
+            {items.map(i=> (
+                <ShoppingListItem 
+                    key = {i.id}
+                    item={i.item} 
+                    quantity={i.quantity} 
+                    completed={i.completed}
+                />
+            ))}
+
+                {/* <ShoppingListItem 
+                    key = {i.id}
+                    {...i}
+                /> */}
         </ul>
     )
 }
