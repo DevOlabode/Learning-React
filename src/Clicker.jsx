@@ -9,7 +9,7 @@ function handleHover(){
 export default function Cliker() {
     return (
         <div>
-            <p onMouseOver={handleHover}>HHOVER OVER ME</p>
+            <p onMouseOver={handleHover}>HOVER OVER ME</p>
             <button onClick = {handleClick}>Click me</button>
         </div>
     )
