@@ -3,7 +3,6 @@ import {useState } from "react";
 
 export default function ToggleCounter() {
     const [isHappy, setIsHappy] = useState(true);
-    // const toggleIsHappy = () => setIsHappy(!isHappy);
     const [count, setCount] = useState(0);
 
     const handleToggle = () =>{
