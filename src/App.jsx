@@ -8,10 +8,6 @@ import Heading from './Heading'
 import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
-import Clicker from './Clicker'
-import Form from './Form'
-import Counter from './Counter';
-import Toggler from './Toggler';
 import ToggleCounter from './ToggleCounter'
 
 const data = [
@@ -23,23 +19,13 @@ const data = [
 
 function App() {
   return <div>
-    <Toggler />
     <ToggleCounter />
-    {/* <Counter /> */}
-    {/* <Clicker />
-  <Form /> */}
-    {/* 
-
-    <ShoppingList items={data}/>
-
+    {/* <ShoppingList items={data}/>
     <ColorList colors={["teal", "magenta", "pink", "purple", "red"]}/>
-
     <Slots v1='w' v2='w' v3='w'/>
     <Slots v1='😋' v2='😋' v3='😂'/>
-
     <Heading color="Magenta" text="Welcome"/>
     <ListPicker values={[1,2,2,4,4]}/>
-
     <DoubleDice />
     <DoubleDice />
     <DoubleDice />
