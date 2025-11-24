@@ -9,6 +9,7 @@ import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
 import ToggleCounter from './ToggleCounter'
+import Counter from './Counter'
 
 const data = [
   {id: 1,item : 'Eggs', quantity : 12, completed : false},
@@ -19,6 +20,7 @@ const data = [
 
 function App() {
   return <div>
+    <Counter />
     <ToggleCounter />
     {/* <ShoppingList items={data}/>
     <ColorList colors={["teal", "magenta", "pink", "purple", "red"]}/>
